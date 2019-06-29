@@ -48,6 +48,7 @@ public class UserAllData extends HttpServlet{
 				map.put("url", resultSet.getString("url"));
 				map.put("register_date", resultSet.getString("register_date"));
 			}
+			System.out.println("测试");
 			JSONObject jo=JSONObject.fromObject(map);
 			pw.write(jo.toString());
 		} catch (SQLException e) {
