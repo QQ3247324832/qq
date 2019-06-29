@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+
+		/* 刘先生 */
+			#sxl1{
+				width: 280px;
+				height: 700px;
+				border: 1px solid red;
+				position: relative;
+				overflow: hidden;
+				float:left;
+			}
+			#sxl2{
+				width: 100%;
+				height: 40px;
+				margin-top:140px ;
+				background-color: rgba(0,0,0,0.2);
+			}
+			#sxl1 input{
+				color:#4f4f4f;
+				border: 0;
+				background-color:rgba(0,0,0,0) ;	
+			}
+			#sxl2 input{
+				font-size: 16px;
+			}
+			.c1{
+				margin-left:20px;
+				margin-top:8px ;
+				
+			}
+			.c2{
+				margin-left: 42px;
+			}
+			.c3{
+				margin-left: 42px;
+			}
+			.c4{
+				width: 65px;
+				margin-left:15px ;
+				border-top: 2px solid #4F4F4F;
+				position: relative;
+			}
+			#sxl3{
+				width: 100%;
+				border: 1px solid red;
+				margin:0;
+				height:474px;
+				position: relative;
+				
+			}
+			.c7>div{
+				width: 100%;
+				cursor:default;
+				display:inline-block;
+				margin:0;
+				line-height:35px;
+				border: 0;
+				height: 35px;
+				
+			}
+			
+			.c7{
+				width: 100%;
+				border: 1px solid red;
+				height:439px;
+				overflow: overlay;
+			}
+			.c8{
+				width: 280px;
+				margin:0;
+				display:inline-block;			
+				height:439px;
+				overflow: overlay;
+				border: 1px solid red;
+				position:absolute;
+				float: right;
+				left: 280px;
+				top: 35px;
+				
+			}
+			.c8>div{
+				width: 100%;
+				cursor:default;
+				display:inline-block;
+				margin:0;
+				line-height:35px;
+				border: 0;
+				height: 35px;
+				
+			}
+			#sxl4{
+				width: 280px;
+				margin:0;
+				height:474px;
+				border: 1px solid red;
+				position:absolute;
+				float: right;
+				left: 280px;
+				top: 182px;
+				display: none;
+			}
+			
+			.sxl11{
+			display: none;
+			}
+			#sxl5{
+				width: 280px;
+				margin:0;
+				height:474px;
+				border: 1px solid red;
+				position:absolute;
+				float: right;
+				left: 280px;
+				top: 182px;
+				display: none;
+			}
+			
+					/* 刘景华 */
+		.black_overlay{
+		display: none;
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		width: 100%;
+		height: 100%;
+		 background-color:black; 
+		z-index: 1001;
+	}
+	.white_content{
+		display: none;
+		position: absolute;
+		top: 30%;
+		left: 30%;
+		width: 28%;
+		padding:20px;
+		border: 10px solid orange;
+		z-index:1002;
+		overflow: auto;
+		background-color:aqua;
+	}
+	.liu_div{
+		width:100%;
+		height:220px;
+		border:1px solid red;
+		margin-top:6px;
+		overflow:scroll;
+		
+	}
+	.liu_div>div{
+		width: 40%;
+		height: 60px;;
+		margin: 25px 0px 0px 25px;
+		float:left;
+		
+	}
+	 .liu_div>div>img{
+		width: 40%;
+		height:80%;
+		float:left;
+		/* position: relative; */
+	}
+	 .liu_div>div>span{
+		position: relative;
+		left: 10%;
+		top: 1%; 
+		width:50px;
+		float:left;
+	}
+	.liu_div>div>input{
+		position: relative;
+		left:  10% ;
+		top: 1%;
+		float:none;
+	} 
+	.liu_exit{
+		position: absolute;
+	}
+	
+	/* 陈明辉 */
+	#cmh_div{
+border: 1px solid red;
+width: 50%;
+height: 600px;
+margin: 0 auto;
+overflow: hidden;
+margin-left:7%;
+padding:0;
+float:left;
+}
+#cd1{
+width: 19%;
+height:600px;
+display:inline-block;
+background-color: yellow;
+margin: 0px;
+overflow: hidden;
+float:left;
+}
+#cd2{
+width: 56%;
+height:600px;
+display:inline-block;
+
+margin: 0px;
+overflow: hidden;
+float:left;
+}
+
+#cd3{
+width: 25%;
+height:600px;
+display:inline-block;
+background-image:url("png/19.gif");
+
+margin: 0px;
+overflow: hidden;
+float:left;
+}
+#cd4{
+border: 1px solid red;
+display:inline-block;	
+width:100%;
+height: 60%;
+margin: 0px;
+overflow: auto;
+
+}
+#cd5{
+border: 1px solid red;
+display:inline-block;	
+width: 100%;
+height: 35%;
+margin: 0px;
+background-color: #e8e8e8;
+}
+
+input[ value="关闭"]{
+    margin-left: 220px;
+    margin-top: 20px;
+
+}
+input[ value="发送"]{
+margin-left: 25px;
+} 
+#cd7{
+background-color: #f8e8e8;
+height: 5%;
+text-align: center;
+    font-size: 20px;
+}
+#ci1{
+display:inline-block;	
+width: 95%;
+height: 55%;
+padding-top:0px;
+
+}
+#cd5>div>img{
+	width: 30px;
+	height: 30px;
+	float: left;
+	
+}
+#cd1>div{
+float: right;
+position: relative;
+}
+#cd1>div>div>img{
+width: 50px;
+height: 50px;
+position: absolute;
+top: 10px;
+left:-75px;
+border-radius:50px;
+}
+#cd1>div>input{
+background-color: rgba(100,100,100,0);
+border: 0px;
+position: relative;
+top: 0px;
+left:40px;
+color: #e8e8e8;
+}
+.cc1{
+position: relative;
+top: -5px;
+left:-20px;
+}
+	
+	
+		</style>
+		<script type="text/javascript" src="../js/jquery-1.4.2.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				 var url = location.search.split("?ID=")[1];
+				 var len = 0;
+				 var tx = new Array();
+				/* 刘先生 */
+				var sss = $("<div style='height:35px'></div>");
+				sss.css("border","0");
+				sss.css("overflow","hidden");
+				var xxx = $("<input type='button' value='好友' class='c5'>");				
+				xxx.css("margin-left","10px");
+				xxx.css("margin-top","5px");
+				xxx.css("height","27px");
+				xxx.css("width","60px");
+				var lll = $("<input type='button' value='群聊' class='c6'>");
+				lll.css("margin-left","8px");
+				lll.css("margin-top","5px");
+				lll.css("height","27px");
+				lll.css("width","60px");	
+				var ooo = $("<div></div>");
+				ooo.css("display","inline-block");
+				ooo.css("height","20px");
+				ooo.css("border-left","1px solid #e0e0e0");
+				ooo.css("float","right");
+				ooo.css("margin","7px 15px 0 0");
+				var zzz = $("<input type='button' value='+'>");
+				zzz.css("border","o");
+				zzz.css("font-size","24px");
+				zzz.css("float","right");
+				zzz.css("margin","2px 5px 0 0");
+				
+				var s13= $("<div class='c7'></div>")
+				var s14= $("<div class='c8'></div>")
+				
+								//	联系人鼠标移入事件
+				$(".c1").mouseover(function(){
+					$(".c1").css("color","black");
+					
+				});
+				//消息鼠标移入事件
+				$(".c2").mouseover(function(){
+					$(".c2").css("color","black");
+					
+				});
+				//空间鼠标移入事件
+				$(".c3").mouseover(function(){
+					$(".c3").css("color","black");
+					
+				});
+				//鼠标移出事件
+				$("#sxl2 input").mouseout(function(){
+					$(".c1,.c2,.c3").css("color","#4F4F4F");
+				});
+				//联系人点击事件
+				$(".c1").click(function(){	
+					$(".c4").animate({"left":"0"},80);
+					$("#sxl3").animate({"right":"0"},80);
+					$("#sxl3").css("display","block");
+					$("#sxl4").animate({"left":"280px"},80);
+					setTimeout(function(){
+						$("#sxl4").css("display","none");
+					},80);	
+					$("#sxl5").css("display","none");
+					$("#sxl5").animate({"left":"280px"},80);
+				});
+				//消息点击事件
+				$(".c2").click(function(){
+					$(".c4").animate({"left":"100px"},80);
+					$("#sxl3").animate({"right":"280px"},80);
+					setTimeout(function(){
+						$("#sxl3").css("display","none");
+					},80);		
+					$("#sxl5").css("display","none");
+					$("#sxl5").animate({"left":"280px"},80);
+					$("#sxl4").css("display","inline-block");
+					$("#sxl4").animate({"left":"0"},80);
+					
+				});
+				//空间点击事件
+				$(".c3").click(function(){
+					$(".c4").animate({"left":"190px"},80);
+					$("#sxl3").animate({"right":"280px"},80);
+					setTimeout(function(){
+						$("#sxl3").css("display","none");
+					},80);					
+					$("#sxl4").css("display","none");
+					$("#sxl4").animate({"left":"280px"},80);
+					$("#sxl5").css("display","inline-block");
+					$("#sxl5").animate({"left":"0"},80);
+				});
+				
+				
+				
+				//添加好友+框
+				$("#sxl3").append(sss);				
+				sss.append(xxx);
+				sss.append(lll);
+				sss.append(zzz);
+				sss.append(ooo);
+				$("#sxl3").append(s13);
+				$("#sxl3").append(s14);
+				
+				//好友框点击事件
+				$(".c5").click(function(){	
+					$(".c7").animate({"left":"0"},80);
+					$(".c7").css("display","block");
+					$(".c8").animate({"left":"280px"},80);
+					setTimeout(function(){
+						$(".c8").css("display","none");
+					},80);	
+				});
+				//群聊框点击事件
+				$(".c6").click(function(){
+					$(".c8").animate({"left":"0"},80);
+					$(".c8").css("display","block");
+					$(".c7").animate({"right":"280px"},80);
+					setTimeout(function(){
+						$(".c7").css("display","none");
+					},80);
+				});
+				
+
+				
+				
+				
+//------------------------上面是框架--------------------------------------------------------------------
+
+				//==============分组列表元素==========================================================================
+								function fn1(name){
+									var fz = $("<div>&nbsp;&nbsp;❤❤❤&nbsp;&nbsp;"+name+"</div>");
+									return fz;
+								}
+								var fz = new Array();
+								
+
+				//==============================好友元素==================================================================
+								function friend(name){
+									var hy = $("<div class='sxl11'>"+name+"</div>");
+									return hy;
+								}
+								var hy = new Array();
+//=============================================以上是定义=======================
+				
+				/* 刘景华 */
+				$("input[value='退出']").click(function(){
+					$("div[id='liu_light']").hide();
+				});
+				$("input[value='+']").click(function(){
+				$("div[id='liu_light']").show();
+				});
+				/* 添加好友 */
+				function ljh_cxhy(png,name,ID){
+					var im = $("<div class='ljh_tjdiv' float:top ><img src='"+png+"'><span>"+name+"("+ID+")</span><input type='button' class='"+ID+"' value='加好友'></div>")
+					$(".liu_div").append(im); 
+					$("."+ID).click(function(){
+						var Account = url;
+						$.ajax({
+							type:"post",//请求方式Find_ID
+							url:"Add_friend.do?Account="+Account+"&Account_add="+ID+"&group_ID=0",//请求路径?携带到后台的参数
+							dataType:"json",
+							success:function(data){//处理后的结果封装到data里面
+								alert(data.name)
+								if(data.name=="添加好友成功"){
+									tx.push(TXfn('tx.png'));
+								hy.push(friend(ID));
+								addfriend(0,len);//开始你的表演
+								len++;
+								lxs_hyystjsx();
+								/* ljh_cxhy(); */
+
+								}
+								}
+							})						
+					})
+				}
+				
+				$("#cd5>input").eq(1).click(function(){
+					//获取text中的内容
+					var content=$("#ci1").val();
+					//创建一个span
+					var div=$("<div>" +content+"</div>");
+					/* div_end.scrollIntoView(); */
+					$(this).scrollTop($(this).scrollHeight); 
+					$(div).css({"width":"70%","word-wrap":"break-word","margin-top":"10px",
+						"border":"1px solid red ","margin-left":"50px","border-radius":"8px"
+						,"position":"relative","scrollTop":"scrollHeight"})
+					//把span添加到 父元素.append（新元素）；添加在最后
+					$("#cd4").append(div);
+					$("#ci1").val("");
+						})
+					//给关闭按钮添加点击事件
+					$("input[ value='关闭']").click(function(){
+						$("body>div").hide();
+					})
+
+				
+				$("input[value='查询']").click(function(){
+					var ID=  $(".liu_text").val();
+					$.ajax({
+						type:"post",//请求方式Find_ID
+						url:"Find_ID.do?ID="+ID,//请求路径?携带到后台的参数
+						dataType:"json",
+						success:function(data){//处理后的结果封装到data里面
+							for(var i = 0;i<data.name.length;i++){
+								ljh_cxhy(data.url[i],data.name[i],data.ID[i])
+							}
+							console.log(data)
+							/* ljh_cxhy(); */
+						}
+						})
+				
+				})
+
+
+//===================添加好友到分组====================================================================
+				function addfriend(x,i){
+					fz[x].after(hy[i]);
+					fz[x].click(function(){
+						hy[i].toggle("80");	
+					});
+					hy[i].mouseover(function(){
+						hy[i].css("background-color","rgba(0,0,0,0.2)");
+						});
+					hy[i].mouseout(function(){
+						hy[i].css("background-color","rgba(0,0,0,0)");
+					});
+					hy[i].append(tx[i])
+				}
+//===============添加分组元素到c7div中=================================================================
+				function fz_csh(name){
+				fz[name].css("width","100%");
+				fz[name].css("cursor","default");
+				fz[name].css("display","inline-block");
+				fz[name].css("margin","0");
+				fz[name].css("line-height","35px");
+				fz[name].css("border","0");
+				fz[name].css("height","35px");
+				$(".c7").append(fz[name]);
+				fz[name].mouseover(function(){
+					fz[name].css("background-color","rgba(0,0,0,0.2)");
+					});
+				fz[name].mouseout(function(){
+					fz[name].css("background-color","rgba(0,0,0,0)");
+				});
+				}	
+//===============================头像元素===========================================================
+				function TXfn(url){
+					var tx = $("<img src='./"+url+"'>");
+					tx.css("width","30px");
+					tx.css("height","30px");
+					tx.css("border-radius","16px");	
+					tx.css("float","left");	
+					tx.css("margin","5px 10px 0 10px");	
+					return tx;
+				}
+//======================分组和好友数据===============================================================
+				function getfriend(){
+						$.ajax({
+					type:"post",//请求方式
+					url:"UserAllData.do?username="+url,//请求路径?携带到后台的参数
+					dataType:"json",
+					success:function(data){//处理后的结果封装到data里面
+						if(data.Account=="非法访问"){
+							alert("非法访问");
+							window.location.href="./index.html";
+						}else {
+						$("body").css("background-image","url('"+data.url+"')");
+						$("body").css("background-size","100% 120%");
+						}
+					}
+					})
+					 
+					$.ajax({
+				type:"post",//请求方式
+				url:"UserFriendData.do?username="+url,//请求路径?携带到后台的参数
+				dataType:"json",
+				success:function(data){//处理后的结果封装到data里面
+					friendData=data.name;
+					console.log("总元素:"+friendData);
+					var arrfriend_group=friendData.split("|");
+					for(var i = 1 ;i<arrfriend_group.length;i++){
+						var arrfriend=arrfriend_group[i].split(",");
+						fz.push(fn1(arrfriend[0]));
+                        fz_csh(i-1);
+						if(arrfriend.length>0){
+							for(var j=1; j<arrfriend.length-1;j++){
+								/* alert("分组:"+i+"好友:"+j+" "+arrfriend[j]) */
+								hy.push(friend(arrfriend[j]));
+								console.log(friend(arrfriend[j]).html()+" ")
+								tx.push(TXfn('tx.png'));
+								addfriend(i-1,len);//开始你的表演
+								len++;
+							}
+							lxs_hyystjsx();
+						}
+					}
+					
+				}
+			});
+				}
+				getfriend()
+//=======================给好友元素添加属性=============================================================
+				function lxs_hyystjsx(){
+				
+					for(var i =0;i<hy.length;i++){
+					hy[i].css("width","100%");
+					hy[i].css("cursor","default");
+					hy[i].css("display","inline-block");
+					hy[i].css("margin","0");
+					hy[i].css("line-height","40px");
+					hy[i].css("border","0");
+					hy[i].css("height","40px");
+					hy[i].css("display","none");
+				}
+					
+				}
+			});
+		</script>
+	</head>
+	<body>
+	<!-- 刘先生 -->
+		<div id="sxl1">
+				<div id="sxl2">
+					<input type="button" value="联系人" class="c1">
+					<input type="button" value="消息" class="c2">
+					<input type="button" value="空间" class="c3">
+				</div>
+				<div class="c4"></div>
+				<div id="sxl3">
+					<!--<div class="c7"></div>-->
+				</div>
+				<div id="sxl4">1</div>
+				<div id="sxl5">2</div>
+				
+		</div>
+		<!-- 刘景华 -->
+		<div id="liu_light" class="white_content">寻找好友<br>
+	<input type="text" class="liu_text">
+	<input type="button" value="查询">
+	<input type="button" value="退出" class="liu_exit">
+	<div class="liu_div">
+		<!-- 查询好友 -->
+	</div>
+</div>
+<div id=cmh_div>
+	<div id="cd1">
+		<div>
+			<div><img  src="png/2.gif" ></div>
+			<input type="button" value="x"  >
+			<div class="cc1">王嬷嬷</div>
+			<div class="cc1">今天你好</div>
+			
+		</div>
+	</div>
+	<div id="cd2">
+		<div id="cd7">王嬷嬷</div>
+		<div id="cd4"> 
+			<div id="cd6"></div>
+		</div>
+		<div id="cd5"> 
+			<div id="cd8">
+				<img src="tx.png">
+				<img src="tx.png">
+				<img src="tx.png">
+				<img src="tx.png">
+				<img src="tx.png">
+				<img src="tx.png">
+				<img src="tx.png">
+			</div>
+			<textarea rows="5"   id="ci1" > </textarea>
+			
+		    <input type="button" value="关闭" width="5px">
+			<input type="button" value="发送" >
+		
+			
+		</div>
+	</div>
+	<div id="cd3">
+		<div></div>
+	</div>
+</div>
+
+
+	</body>
+</html>

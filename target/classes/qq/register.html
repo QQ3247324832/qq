@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" charset="utf-8">
+<title>QQ注册</title>
+
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="../js/jquery-1.4.2.js"></script>
+<script type="text/javascript">
+var stare = -1;
+var stare_password = -1;
+$(function(){
+	/* 获取焦点 */
+	$(".username").focus(function(){
+		stare=-1;
+	})
+	/* 失去焦点 */
+	$(".username").blur(function(){
+		var username = $(".username").val();
+		if(username.length>=3){
+			$.ajax({
+				type:"post",//请求方式
+				url:"name.do?username="+username,//请求路径?携带到后台的参数
+				dataType:"json",
+				success:function(data){//处理后的结果封装到data里面
+					console.log(data);
+					if(data.name=="0"){
+						stare=-1;
+						$("#name_ts").html("该ID已存在");
+						$("#name_ts").css("color","red");
+					}else{
+						stare=0;
+						$("#name_ts").html("该ID可以使用");
+						$("#name_ts").css("color","white");
+					}
+				}
+				
+			})			
+			
+	}
+		
+	})
+	/* 提交注册 */
+	$("#submit").click(function(){
+		var username = $(".username").val();
+		var password = $(".password").val();
+		var confirm_password = $(".confirm_password").val();
+		var name = $(".name").val();
+ 		/*  alert("stare_password:"+stare_password+"stare:"+stare+"username:"+username+" password:"+password+" confirm_password:"+confirm_password+" name"+name) */ 
+ 	 	name = encodeURI(name);
+	 	name = encodeURI(name);
+		if(stare_password==0 && stare==0 && username.length>=3&& password==confirm_password && password.length>=3 && name!=""){
+			$.ajax({
+			type:"post",//请求方式
+			url:"register.do?username="+username+"&password="+password+"&name="+name,//请求路径?携带到后台的参数
+			dataType:"json",
+			success:function(data){//处理后的结果封装到data里面
+				var name =data.name;
+			alert(name)
+				/* name=decodeURI(data.name);
+				 */
+			if(name=="成功"){
+					window.location.href="./skip.html"
+				}else{
+					alert("注册失败")
+				}
+			}
+		})
+			
+		}else{
+			alert("信息填写不符合规则")
+		}
+	})
+	
+	$(".confirm_password").blur(function(){
+		var password=$(".password").val();
+		var confirm_password=$(".confirm_password").val();
+		if(password!=confirm_password){
+			$("#password_ts").html("两次密码输入不一致");
+			stare_password=-1;
+			$("#password_ts").css("color","red");
+		}else{
+			$("#password_ts").html("");	
+			stare_password=0;
+			$("#password_ts").css("color","white");
+		
+		}
+		
+	})
+	
+})
+</script>
+<body>
+
+<div class="login-container">
+	<h1>腾讯QQ</h1>
+	
+	<div class="connect">
+		<p>欢迎注册</p>
+	</div>
+	
+	<form action="./register.do" method="post" id="loginForm">
+	<div>
+			<input type="text" name="username" class="username" placeholder="您的用户ID" oninput = "value=value.replace(/[^\d]/g,'')" autocomplete="off"/><span id="name_ts"></span>
+			
+		</div>
+		<div>
+			<input type="password" name="password" class="password" placeholder="输入密码" oncontextmenu="return false" onpaste="return false" />
+		</div>
+		<div>
+			<input type="password" name="confirm_password" class="confirm_password" placeholder="再次输入密码" oncontextmenu="return false" onpaste="return false" /><span id="password_ts"></span>
+		</div>
+
+		<div>
+			<input type="text" name="name" class="name" placeholder="您的用户名"  autocomplete="off"/>
+		</div>
+
+		<button id="submit" type="button">注 册</button>
+	</form>
+
+	<a href="index.html">
+		<button type="button" class="register-tis">已有账号？</button>
+	</a>
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<!--背景图片自动更换-->
+<script src="js/supersized.3.2.7.min.js"></script>
+<script src="js/supersized-init.js"></script>
+<!--表单验证-->
+<script src="js/jquery.validate.min.js?var1.14.0"></script>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>© 2003-现在 5组 版权所有</p>
+</div>
+</body>
+</html>

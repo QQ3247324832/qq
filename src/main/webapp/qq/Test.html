@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-1.4.2.js"></script>
+<script type="text/javascript">
+	$(function(){
+	$("#name").focus(function(){
+		$("#hint").html("请输入用户名");
+	})
+	
+	
+	$("#name").blur(function(){
+		var name =$("#name").val();
+		$.ajax({
+			type:"post",//请求方式
+			url:"text.do?",//请求路径?携带到后台的参数
+			dataType:"json",
+			success:function(data){//处理后的结果封装到data里面
+				console.log(data)
+			}
+		})
+	})
+	})
+
+</script>
+</head>
+<body>
+请输入用户名:<input type="text" id="name">
+			<span id="hint"></span>
+</body>
+</html>

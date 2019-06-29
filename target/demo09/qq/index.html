@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" charset="UTF-8">
+<title>腾讯QQ</title>
+
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="../js/jquery-1.4.2.js"></script>
+<script type="text/javascript">
+
+	$(function(){
+		$("#submit").click(function(){
+			var username = $(".username").val();
+			var password = $(".password").val();
+				$.ajax({
+				type:"post",//请求方式
+				url:"index.do?username="+username+"&password="+password,//请求路径?携带到后台的参数
+				dataType:"json",
+				success:function(data){//处理后的结果封装到data里面
+					if(data.name == "成功"){
+						
+						window.location.href="./qq.html?ID="+username;
+					}else{
+						alert("失败")		
+					}
+				}
+			})
+		})
+		
+		
+		
+	})
+</script>
+<body>
+
+<div class="login-container">
+	<h1 id="tcs">QQ登录</h1>
+	
+	<div class="connect">
+		<p>欢迎登录</p>
+	</div>
+	
+	<form action="./index.do" method="post" id="loginForm">
+		<div>
+			<input id="username" type="text" name="username" class="username" placeholder="用户ID" oninput = "value=value.replace(/[^\d]/g,'')"  autocomplete="off"/>
+		</div>
+		<div>
+			<input type="password" name="password" class="password" placeholder="密码" oncontextmenu="return false" onpaste="return false" />
+		</div>
+		<button id="submit" type="button" >登 陆</button>
+	</form>
+
+	<a href="register.html">
+		<button type="button" class="register-tis">还有没有账号？</button>
+	</a>
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<!--背景图片自动更换-->
+<script src="js/supersized.3.2.7.min.js"></script>
+<script src="js/supersized-init.js"></script>
+<!--表单验证-->
+<script src="js/jquery.validate.min.js?var1.14.0"></script>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>© 2003-现在 5组 版权所有</p>
+</div>
+</body>
+</html>
