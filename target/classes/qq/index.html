@@ -16,8 +16,7 @@
 				url:"index.do?username="+username+"&password="+password,//请求路径?携带到后台的参数
 				dataType:"json",
 				success:function(data){//处理后的结果封装到data里面
-					if(data.name == "成功"){
-						
+					if(data.name == "成功"){ 1
 						window.location.href="./qq.html?ID="+username;
 					}else{
 						alert("失败")		

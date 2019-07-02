@@ -23,15 +23,11 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="df7ae6f4-13e6-47fe-abdb-bca4e92374f9">
-        <schema name="gluttonoussnake" object-types="constraint, view, procedure, column, dataset trigger, function, index, table" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="df7ae6f4-13e6-47fe-abdb-bca4e92374f9">
-      <console name="gluttonoussnake" type="STANDARD" schema="mysql" session="Main" />
+      <console name="gluttonoussnake" type="STANDARD" schema="" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">

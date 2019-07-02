@@ -16,8 +16,7 @@
 				url:"index.do?username="+username+"&password="+password,//请求路径?携带到后台的参数
 				dataType:"json",
 				success:function(data){//处理后的结果封装到data里面
-					if(data.name == "成功"){
-						
+					if(data.name === "成功"){
 						window.location.href="./qq.html?ID="+username;
 					}else{
 						alert("失败")		
@@ -44,7 +43,8 @@
 			<input id="username" type="text" name="username" class="username" placeholder="用户ID" oninput = "value=value.replace(/[^\d]/g,'')"  autocomplete="off"/>
 		</div>
 		<div>
-			<input type="password" name="password" class="password" placeholder="密码" oncontextmenu="return false" onpaste="return false" />
+			<input type="password" name="password" class="password" placeholder="密码" oncontextmenu="return false" />
+		<!--onpaste="return false" -->
 		</div>
 		<button id="submit" type="button" >登 陆</button>
 	</form>
